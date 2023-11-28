@@ -11,9 +11,6 @@
 
     End Sub
 
-
-
-
     Public Sub mostrar_seguro()
         Dim c As New FSeguro
         dtseguro = c.mostrar_seguros
