@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autos.Designer.vb">
+      <DependentUpon>Autos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Autos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="Fcategoria.vb" />
     <Compile Include="Fcliente.vb" />
@@ -166,6 +172,9 @@
     <Compile Include="Validaciones.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Autos.resx">
+      <DependentUpon>Autos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formcategorias.resx">
       <DependentUpon>Formcategorias.vb</DependentUpon>
     </EmbeddedResource>
