@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4518684A-4040-4C68-926B-0F5764C38BE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RentaAcar.My.MyApplication</StartupObject>
+    <RootNamespace>RentaAcar</RootNamespace>
+    <AssemblyName>RentaAcar</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RentaAcar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RentaAcar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Fcategoria.vb" />
+    <Compile Include="Fcliente.vb" />
+    <Compile Include="fmantenimiento.vb" />
+    <Compile Include="Formcategorias.Designer.vb">
+      <DependentUpon>Formcategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formcategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcliente.Designer.vb">
+      <DependentUpon>Formcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormlistaVentas.Designer.vb">
+      <DependentUpon>FormlistaVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormlistaVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmenu.Designer.vb">
+      <DependentUpon>Formmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formproducto.Designer.vb">
+      <DependentUpon>Formproducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formproducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeguros.Designer.vb">
+      <DependentUpon>FormSeguros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeguros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVenta.Designer.vb">
+      <DependentUpon>FormVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fproducto.vb" />
+    <Compile Include="FSeguro.vb" />
+    <Compile Include="fusuario.vb" />
+    <Compile Include="Fventa.vb" />
+    <Compile Include="GenerarFactura.Designer.vb">
+      <DependentUpon>GenerarFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.vb">
+      <DependentUpon>Mantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mcontrol.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Login1.Designer.vb">
+      <DependentUpon>Login1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentaAcarDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentaAcarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Validaciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formcategorias.resx">
+      <DependentUpon>Formcategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formcliente.resx">
+      <DependentUpon>Formcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormlistaVentas.resx">
+      <DependentUpon>FormlistaVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmenu.resx">
+      <DependentUpon>Formmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formproducto.resx">
+      <DependentUpon>Formproducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeguros.resx">
+      <DependentUpon>FormSeguros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVenta.resx">
+      <DependentUpon>FormVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarFactura.resx">
+      <DependentUpon>GenerarFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="RentaAcarDataSet.xsc">
+      <DependentUpon>RentaAcarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RentaAcarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentaAcarDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RentaAcarDataSet.xss">
+      <DependentUpon>RentaAcarDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
